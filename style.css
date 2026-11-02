@@ -1,0 +1,610 @@
+@font-face {
+  font-family: 'Inter'; /* Give your font a name */
+  src: url('fonts/Inter/static/Inter_18pt-Regular.ttf') format('truetype'); /* Path to your .ttf file */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Keeps text visible while loading */
+}
+
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+
+/*
+Nav Bar
+*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+nav ul button{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border:transparent;
+    padding: 5px;
+    border:1px transparent;
+}
+
+nav ul button:hover{
+    background-color:rgb(255, 196, 12);
+    border:1px solid black;
+    border-radius: 15rem;
+    color: black;
+    font-weight: bolder;
+}
+nav #nav-logo{
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+/*
+Conteúdo principal
+*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+/*
+Foto e texto de entrada
+*/
+
+#hero-section{
+    display: flex;
+    flex-direction: row;
+    height: 50rem;
+}
+#hero-text{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#hero-text h1{
+    font-size: 5rem;
+    font-family: "Inter";
+}
+#hero-image{
+    width: 50%;
+    background-image: url("assets/imagem1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 1rem;
+}
+
+/*
+História da Arca
+*/
+
+#historia-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 60rem;
+}
+
+#historia-section #dados{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    align-items: center;
+}
+#dado-header h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#dado-header h1 p{
+    color:rgb(255, 196, 12);
+}
+
+
+#dados .dado-container{
+    border:1px solid black;
+    border-radius: 15rem;
+    padding: 2rem;
+}
+.dado-container h1{
+    color:rgb(255, 196, 12);
+    font-weight: bolder;
+}
+.dado-container p{
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+#historia-section #text-1{
+    width: 50%;
+}
+#historia-section #text-1 p{
+    font-size: 2rem;
+    text-align: justify;
+}
+#historia-section #text-1 h1{
+    font-size: 10rem;
+}
+
+/*
+Portal de transparencia
+*/
+
+#portal-transparencia{
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    height: 30rem;
+}
+#portal-text {
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    width: 50%;
+    margin-right: auto;
+}
+#portal-text h1{
+    font-size: 2.5rem;
+}
+#portal-text p{
+    font-size: 1.5rem;
+}
+#portal-btn{
+    width: 25rem;
+    height: 5rem;
+    border-radius: 15rem;
+    cursor: pointer;
+    border:transparent;
+    font-size: 1.5rem;
+    background-color: rgb(255, 196, 12);
+    margin-right: auto;
+    padding:5px;
+}
+#portal-btn:hover{
+    color:white;
+    background-color: lightblue;
+}
+
+/*
+galeria
+*/
+
+#galeria{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#galeria-text{
+    margin-bottom: 5rem;
+}
+#galeria-text h1{
+    font-size: 3rem;
+}
+
+#galeria-image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.galeria-image{
+    width: 20rem;
+    height: 15rem;
+    cursor: pointer;
+}
+.galeria-image:hover{
+    width: 40rem;
+    height: 30rem;
+}
+#galeria-image-container #image-1{
+    background-image: url("assets/crianca1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#galeria-image-container #image-2{
+    background-image: url("assets/crianca2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#galeria-image-container #image-3{
+    background-image: url("assets/crianca3.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#galeria-image-container #image-4{
+    background-image: url("assets/crianca4.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*
+doação
+*/
+
+#doacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    background-color: rgb(250, 245, 236);
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+#doacao-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+#doacao-header h1{
+    font-size: 5rem;
+}
+#doacao-header h2{
+    font-size: 3.5rem;
+    color:rgb(255, 196, 12);
+}
+#doacao-header img{
+    width: 300px;
+    height: 300px;
+    border:1px solid black;
+
+}
+#doacao-text{
+    margin-left: 5rem;
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+/*
+Form de contato
+*/
+
+#contato{
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap:2rem;
+}
+#contato h1{
+    font-size: 5rem;
+}
+#contato-form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap:1rem;
+}
+
+#contato-form input{
+    border-radius: 0.5rem;
+    border:1px solid black;
+    height: 1.5rem;
+    padding:10px;
+}
+#contato-form textarea{
+    height: 5rem;
+}
+
+/*
+Rodapé
+*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 10rem;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: wheat;
+}
+footer #copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer #copyright #footer-logo{
+    width: 64px;
+    height: 64px;
+}
+
+/*
+=====================================================
+RESPONSIVIDADE
+=====================================================
+*/
+ 
+/* Evita rolagem horizontal em qualquer tela */
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+}
+ 
+/*
+Tablets e telas menores (até 1024px)
+*/
+@media (max-width: 1024px){
+ 
+    nav{
+        height: auto;
+        padding: 1rem 0;
+    }
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+ 
+    #hero-section{
+        height: auto;
+        min-height: 35rem;
+    }
+    #hero-text h1{
+        font-size: 3rem;
+        padding: 1rem;
+    }
+ 
+    #historia-section{
+        flex-direction: column;
+        height: auto;
+        gap: 3rem;
+        padding: 3rem 2rem;
+        box-sizing: border-box;
+    }
+    #historia-section #text-1{
+        width: 100%;
+    }
+    #historia-section #text-1 h1{
+        font-size: 5rem;
+    }
+    #historia-section #text-1 p{
+        font-size: 1.5rem;
+    }
+ 
+    #portal-transparencia{
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+        padding: 3rem 2rem;
+        box-sizing: border-box;
+    }
+    #portal-text{
+        width: 100%;
+        margin-right: 0;
+    }
+    #portal-btn{
+        margin-right: 0;
+        max-width: 100%;
+    }
+ 
+    #galeria{
+        height: auto;
+        padding: 3rem 1rem;
+        box-sizing: border-box;
+    }
+    #galeria-text{
+        margin-bottom: 2rem;
+    }
+    #galeria-image-container{
+        flex-wrap: wrap;
+    }
+    .galeria-image:hover{
+        width: 20rem;
+        height: 15rem;
+    }
+ 
+    #doacao{
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+        padding: 3rem 2rem;
+        box-sizing: border-box;
+    }
+    #doacao-header h1{
+        font-size: 3.5rem;
+    }
+    #doacao-header h2{
+        font-size: 2.5rem;
+    }
+    #doacao-text{
+        margin-left: 0;
+        width: 100%;
+        font-size: 1.25rem;
+    }
+ 
+    #contato{
+        height: auto;
+        padding: 3rem 1rem;
+    }
+    #contato h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    #contato-form{
+        width: 80%;
+    }
+}
+ 
+/*
+Celulares (até 600px)
+*/
+@media (max-width: 600px){
+ 
+    nav ul{
+        gap: 0.5rem;
+    }
+    nav ul button{
+        width: 100%;
+        min-width: 9rem;
+        height: auto;
+    }
+    nav #nav-logo{
+        width: 80px;
+        flex-basis: 100%;
+        margin: 0 auto;
+    }
+ 
+    #hero-section{
+        flex-direction: column;
+        min-height: 0;
+    }
+    #hero-text{
+        width: 100%;
+    }
+    #hero-text h1{
+        font-size: 2.2rem;
+    }
+    #hero-image{
+        width: 100%;
+        height: 18rem;
+        margin-right: 0;
+    }
+ 
+    #historia-section{
+        padding: 2rem 1rem;
+    }
+    #dado-header h1{
+        font-size: 2rem;
+    }
+    #dados .dado-container{
+        border-radius: 2rem;
+        padding: 1.5rem;
+        text-align: center;
+    }
+    .dado-container h1{
+        font-size: 1.5rem;
+    }
+    #historia-section #text-1 h1{
+        font-size: 3rem;
+    }
+    #historia-section #text-1 p{
+        font-size: 1.1rem;
+        text-align: left;
+    }
+ 
+    #portal-transparencia{
+        padding: 2rem 1rem;
+    }
+    #portal-text h1{
+        font-size: 1.6rem;
+    }
+    #portal-text p{
+        font-size: 1.1rem;
+    }
+    #portal-btn{
+        width: 100%;
+        height: auto;
+        min-height: 4rem;
+        font-size: 1.1rem;
+    }
+ 
+    #galeria-text h1{
+        font-size: 2rem;
+    }
+    .galeria-image,
+    .galeria-image:hover{
+        width: 100%;
+        max-width: 20rem;
+        height: 14rem;
+    }
+ 
+    #doacao{
+        padding: 2rem 1rem;
+    }
+    #doacao-header h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    #doacao-header h2{
+        font-size: 2rem;
+    }
+    #doacao-header img{
+        width: 220px;
+        height: 220px;
+    }
+    #doacao-text{
+        font-size: 1.05rem;
+        text-align: left;
+    }
+ 
+    #contato h1{
+        font-size: 2.2rem;
+    }
+    #contato-form{
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    #contato-form input{
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+    }
+    #contato-form textarea{
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 7rem;
+    }
+ 
+    footer{
+        flex-direction: column;
+        height: auto;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    footer ol{
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+}
