@@ -331,6 +331,16 @@ Form de contato
     height: 5rem;
 }
 
+#send-button{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+    width: 20rem;
+    align-self:center ;
+    background-color: rgb(255, 196, 12);
+    font-weight: bolder;
+}
+
 /*
 Rodapé
 */
@@ -473,6 +483,9 @@ Tablets e telas menores (até 1024px)
     #contato-form{
         width: 80%;
     }
+    #send-button{
+        margin:0;
+    }
 }
  
 /*
@@ -594,6 +607,10 @@ Celulares (até 600px)
         width: 100%;
         box-sizing: border-box;
         min-height: 7rem;
+    }
+
+    #send-button{
+        margin:0;
     }
  
     footer{
